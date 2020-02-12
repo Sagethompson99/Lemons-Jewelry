@@ -1,0 +1,308 @@
+@media only screen and (max-width: 999px){
+ .rectangle {
+   position: sticky;
+   position: -webkit-sticky; /* Safari */
+   top: 10px;
+   z-index: -1;
+   width: 100%;
+   height: 55px;
+   background: #ffffff;
+   margin-bottom: -65px;
+}
+  hr.divider {
+   position: relative;
+   background-color: black;
+   width: 85%; 
+   animation: fadeAnimation .7s ease-in;
+}    
+  div.pageCard {
+    position: absolute;
+    margin-top: -25px;
+    background-color: white;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+ height: 100%;
+}
+   body {
+   font-family: 'Poppins';
+   min-height: 100%;
+   margin: 0;
+   background-color: #830830;
+   text-align: center;
+}
+
+  @keyframes fadeAnimation{
+   from{
+     opacity: 0;
+   }
+   to{
+     opacity: 1;
+   }
+}
+  a:link, a:visited {
+   z-index: 1;
+   top: 13px;
+   left: 0px;
+   position: sticky;
+   position: -webkit-sticky; /* Safari */
+   color: black;
+   border-style: hidden;
+   padding: 9px 9px; 
+   text-align: center;
+   font-size: 18px;
+   text-decoration: none;
+   display: inline-block;
+   animation: fadeAnimation .7s ease-in;
+}
+
+  a:hover {
+   z-index: 1;
+   top: 10px;
+   left: 0px;
+   position: sticky;
+   position: -webkit-sticky; /* Safari */
+   color: black;
+   border-style: hidden;
+   padding: 9px 9px; 
+   text-align: center;
+   font-size: 19px;
+   text-decoration: none;
+   display: inline-block;
+}
+
+ h1 {
+   font-weight: 100;
+   text-align: center;
+   z-index: -6;
+   color: white;
+   margin-top: -190px;
+   margin-bottom: 90px;
+   font-size: 2.5rem;
+   animation: headingAnimation 0.75s ease-in;
+}
+@keyframes headingAnimation {
+   from {
+    opacity: 0;
+    margin-top: -180px;
+    margin-bottom: 80px;
+}
+
+   to {
+    opacity: 1;
+    margin-top: -190px;
+    margin-bottom: 90px;
+}
+}
+  img.mobileBanner{
+    z-index: -6;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    margin-top: -60px;
+    width: 100%;
+    height: 35%;
+    animation: fadeAnimation .75s ease-in;
+}
+
+  img.desktopBanner{
+    display: none;
+  }
+  h5 {
+   z-index: 1;
+   position: static;
+   text-align: center;
+   color: black;
+   font-size: 24px;
+   margin-left: 45px;
+   margin-right: 45px;
+   animation: fadeAnimation 1.1s ease-in;
+}
+  h5.bottomText {
+   font-size: 20px;
+}
+
+ a.card{
+   left: 0px;
+   border-style: hidden;
+}
+
+  .logo{
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    z-index: 1;
+    width: 35px; 
+    height: 35px;
+    margin-top: 0px;
+    margin-left: -12px;
+    top: 18px;
+    animation: fadeAnimation .7s ease-in;
+ }
+#container{ 
+}
+
+/* SELECT OPTIONS */
+ .inventorySelect {
+    margin-left: 4px;
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+}
+ .inventorySelect select {
+    font-family: 'Poppins';
+    font-size: 13px;
+    padding: 9px;
+}
+}
+
+@media only screen and (min-width: 1000px){
+.rectangle {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  width: 100%;
+  height: 10%;
+  top: 20px;
+  background: #830830;
+  box-shadow: 2px 1px grey;
+}
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  background-color: #830830;
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-size: 100px;
+  margin-top: 0px;
+  margin-bottom: 150px;
+}
+  hr.divider {
+   position: relative;
+   background-color: black;
+   width: 45%; 
+}
+
+img.mobileBanner{
+ z-index: -1;
+ display: none;
+}
+
+img.desktopBanner{
+ position: sticky;
+ position: -webkit-sticky;
+ top: -165px;
+ z-index: -1;
+ margin-top: -150px;
+ margin-bottom: -180px;
+ width: 100%;
+ animation: fadeAnimation .85s ease-in;
+}
+
+h5 {
+  color: black;
+  font-size: 29px;
+  margin-right: 220px;
+  margin-left: 220px;
+  animation: fadeAnimation .8s ease-in;
+}
+
+h5.bottomText {
+   margin-top: 100px;
+   animation: fadeAnimation .95s ease-in;
+}
+
+@keyframes fadeAnimation{
+   from{
+     opacity: 0;
+   }
+   to{
+     opacity: 1;
+   }
+}
+a:link {
+  top: 15px;
+  margin: -3px;
+  position: relative;
+  color: white;
+  border-style: solid;
+  border-bottom-style: hidden;
+  border-top-style: hidden;
+  padding: 11px 55px;
+  
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active, a:visited {
+  top: 15px;
+  margin: -3px;
+  position: relative;
+  color: white;
+  border-style: solid;
+  
+  border-bottom-style: hidden;
+  border-top-style: hidden;
+  padding: 11px 55px;
+  
+  text-align: center;
+  font-size: 26px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+img.card {
+ padding: 10px;
+ border-radius: 20px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ animation: fadeAnimation .85s ease-in;
+}
+
+a.album{
+ border-style: hidden;
+}
+a.card{
+ border-style: hidden;
+}
+
+.logo{
+ position: absolute;
+ width: 55px; 
+ height: 55px;
+ top: 12px;
+ left: 22px; 
+}
+
+div.pageCard {
+    position: absolute;
+    margin-top: -25px;
+    background-color: white;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#container{ 
+}
+
+/* SELECT OPTIONS */
+ .inventorySelect {
+    margin-left: 10px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+}
+ .inventorySelect select {
+    font-family: 'Poppins';
+    font-size: 17px;
+    padding: 15px;
+}
+
+}
