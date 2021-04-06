@@ -9,33 +9,37 @@
   </head>
 
   <body>
-    <div class="rectangle"></div>
-    <a name="button" href="Index.html">Home</a>
-    <a name="button" href="Inventory.html">Inventory</a>
-    <a name="button" href="AboutUs.html">About Us</a>
+    <div class="rectangle">
+    <a class="button" href="Index.html">HOME</a>
+	<a class="selectedButton" href="Inventory.html">INVENTORY</a>
+	<a class="title" href="">LEMON'S JEWELRY</a>
+	<a class="button" href="AboutUs.html">ABOUT US</a>
+	<a class="button" href="AboutUs.html">CONTACT US</a>
+    </div>
     <img src="banner.jpg" class="mobileBanner">
-    <img src="desktopBanner.JPG" class="desktopBanner">
+    <img src="desktopBannerImage.png" class="desktopBanner">
   
-    <div class="pageCard"></div>
+    <div class="pageCard">
     <h5>Inventory</h5>
-    <h2> </h2>
-    <hr class="divider"></hr>
 
 	<div id="container">
 	<div class="inventorySelect">
-      <select>
-        <option value="any">Type (Any)</option>
-		<option value="ring">Rings</option>
-		<option value="charm">Charms</option>
-		<option value="necklace">Necklaces</option>
-		<option value="bracelet">Bracelets</option>
-		<option value="earring">Earrings</option>
-	  </select>
+		<div class="select">
+      		<select name="inventorySelect" id="inventorySelect">
+        		<option value="any">Type</option>
+				<option value="ring">Rings</option>
+				<option value="charm">Charms</option>
+				<option value="chain">Chains</option>
+				<option value="necklace">Necklaces</option>
+				<option value="bracelet">Bracelets</option>
+				<option value="earring">Earrings</option>
+	  		</select>
+		</div>
 	</div>
 
 	<div class="inventorySelect">
       <select>
-        <option value="any">Stone (Any)</option>
+        <option value="any">Stone</option>
 		<option value="none">None</option>
 		<option value="ruby">Ruby</option>
 		<option value="diamond">Diamond</option>
@@ -44,19 +48,26 @@
 	  </select>
 	</div>
 
-		<div class="inventorySelect">
-      <select>
-        <option value="any">Price (Any)</option>
-		<option value="49">$0-$49</option>
-		<option value="99">$50-$99</option>
-		<option value="199">$100-$199</option>
-		<option value="299">$200-$299</option>
-		<option value="300">$300+</option>
+	<div class="inventorySelect">
+      <select id="price-select"> 
+        <option value="any">Price</option>
+		<option value="50">$0-$50</option>
+		<option value="100">$51-$100</option>
+		<option value="200">$101-$200</option>
+		<option value="300">$201-$300</option>
+		<option value="500">$301-500</option>
+		<option value="750">$501-750</option>	
+		<option value="1250">$751-1250</option>
+		<option value="+">$1251+</option>
 	  </select>
 	</div>
 
+	<div class="inventorySelect">
+		<button class="searchButton">Search</button>
+	</div>
 	</div>
 	<h5 class="bottomText"> No results </h5>
+    </div>
   </body>
 
 </html>

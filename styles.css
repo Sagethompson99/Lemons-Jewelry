@@ -1,20 +1,14 @@
 @media only screen and (max-width: 999px){
  .rectangle {
-   position: sticky;
-   position: -webkit-sticky; /* Safari */
-   top: 10px;
-   z-index: -1;
+   position: fixed;
+   position: fixed; /* Safari */
+   top: 0px;
+   left: 0px;
+   z-index: 1;
    width: 100%;
    height: 55px;
-   background: #ffffff;
-   margin-bottom: -65px;
-}
-  hr.divider {
-   position: relative;
-   background-color: black;
-   width: 85%; 
-   animation: fadeAnimation .7s ease-in;
-}    
+   background: #f5f5f5;
+}  
   div.pageCard {
     position: absolute;
     margin-top: -25px;
@@ -45,7 +39,7 @@ html {
 }
   a:link, a:visited {
    z-index: 1;
-   top: 13px;
+   top: 15px;
    left: 0px;
    position: sticky;
    position: -webkit-sticky; /* Safari */
@@ -125,25 +119,6 @@ html {
    font-size: 20px;
 }
 
- a.card{
-   left: 0px;
-   border-style: hidden;
-}
-
-  .logo{
-    position: sticky;
-    position: -webkit-sticky; /* Safari */
-    z-index: 1;
-    width: 35px; 
-    height: 35px;
-    margin-top: 0px;
-    margin-left: -12px;
-    top: 18px;
-    animation: fadeAnimation .7s ease-in;
- }
-#container{ 
-}
-
 /* SELECT OPTIONS */
  .inventorySelect {
     margin-left: 4px;
@@ -158,62 +133,58 @@ html {
 }
 }
 
+
+
+
 @media only screen and (min-width: 1000px){
 .rectangle {
-  position: absolute;
-  opacity: 0;
-  z-index: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
   width: 100%;
-  height: 10%;
-  top: 20px;
-  background: #830830;
-  box-shadow: 2px 1px grey;
+  height: 75px;
+  background: rgb(0, 0, 0);
 }
 
 body {
   font-family: 'Poppins';
-  margin: 0;
-  background-color: #830830;
+  margin: 0px;
+  background-color: rgb(238, 238, 238);
   text-align: center;
 }
+
 h1 {
-  color: white;
+  color: black;
+  z-index: 1;
   font-size: 100px;
   margin-top: 0px;
-  margin-bottom: 150px;
-}
-  hr.divider {
-   position: relative;
-   background-color: black;
-   width: 45%; 
 }
 
-img.mobileBanner{
- z-index: -1;
+.mobileBanner{
  display: none;
 }
 
-img.desktopBanner{
- position: sticky;
- position: -webkit-sticky;
- top: -165px;
- z-index: -1;
- margin-top: -150px;
- margin-bottom: -180px;
+.desktopBanner{
+ position: fixed;
+ top: 60px;
+ left: 0px;
+ z-index: 0;
  width: 100%;
  animation: fadeAnimation .85s ease-in;
 }
 
 h5 {
   color: black;
-  font-size: 29px;
-  margin-right: 220px;
-  margin-left: 220px;
+  font-size: 35px;
+  z-index: 1;
   animation: fadeAnimation .8s ease-in;
 }
 
-h5.bottomText {
-   margin-top: 100px;
+.bottomText {
+   font-size: 25px;
+   margin-left: 5%;
+   margin-right: 5%;
    animation: fadeAnimation .95s ease-in;
 }
 
@@ -225,84 +196,101 @@ h5.bottomText {
      opacity: 1;
    }
 }
-a:link {
+
+.button {
   top: 15px;
-  margin: -3px;
   position: relative;
   color: white;
-  border-style: solid;
-  border-bottom-style: hidden;
-  border-top-style: hidden;
-  padding: 11px 55px;
-  
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
+  width: 15%;
+  height: 100%;
   text-decoration: none;
   display: inline-block;
 }
 
-a:hover, a:active, a:visited {
+.title {
   top: 15px;
-  margin: -3px;
   position: relative;
   color: white;
-  border-style: solid;
-  
-  border-bottom-style: hidden;
-  border-top-style: hidden;
-  padding: 11px 55px;
-  
   text-align: center;
   font-size: 26px;
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 800;
   text-decoration: none;
   display: inline-block;
 }
 
-img.card {
+.button:hover {
+  font-size: 20px;
+}
+
+.selectedButton {
+  top: 15px;
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  width: 15%;
+  height: 100%;
+  text-decoration: none;
+  display: inline-block;
+  border-top-style: solid;
+  border-bottom: #f5f5f5;
+  border-width: 2px;
+}
+
+.card {
  padding: 10px;
  border-radius: 20px;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  animation: fadeAnimation .85s ease-in;
 }
 
-a.album{
- border-style: hidden;
-}
-a.card{
- border-style: hidden;
-}
-
-.logo{
- position: absolute;
- width: 55px; 
- height: 55px;
- top: 12px;
- left: 22px; 
-}
-
-div.pageCard {
-    position: absolute;
-    margin-top: -25px;
-    background-color: white;
-    z-index: -1;
+.pageCard {
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    top: 340px;
+    z-index: 1;
     width: 100%;
-    height: 100%;
-}
-
-#container{ 
+    height: 120%;
 }
 
 /* SELECT OPTIONS */
- .inventorySelect {
-    margin-left: 10px;
-    margin-top: 20px;
-    position: relative;
-    display: inline-block;
+.inventorySelect {
+  margin-left: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  position: relative;
+  
+  box-shadow: inset;
+  border-style: hidden;
+  display: inline-block;
 }
- .inventorySelect select {
-    font-family: 'Poppins';
-    font-size: 17px;
-    padding: 15px;
+
+.inventorySelect select {
+  font-family: 'Poppins';
+  font-size: 18px;
+  box-shadow: inset;
+  border-style: hidden;
+  padding: 15px;
+}
+
+.searchButton {
+  text-align: center;
+  border-style: none;
+  color: white;
+  background-color: rgb(66, 134, 235);
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: 'Poppins';
+  box-shadow: inset;
+  font-size: 17px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 }
